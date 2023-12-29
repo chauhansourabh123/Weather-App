@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="container">
+        <form id="inputForm" class="form">
+            <input type="text" placeholder="Search" id="searchedTemperature">
+            <button id="searchBtn">Search</button>
+        </form>
+        <div class="temperature">
+            <i class="bi bi-cloud-sun-fill"></i>
+            <h3 class="tem" id="temperature"></h3>
+            <div class="country" id="country"></div>
+        </div>
+        <div class="data">
+            <div class="humidity">
+                <i class="bi bi-water"></i>
+                <div class="about">
+                    <h3 id="humidity"></h3>    <!-- 55 %-->
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="humidity">
+                <i class="bi bi-wind"></i>
+                <div class="about">
+                    <h3 id="windSpeed"></h3>   <!-- 12 Km/h-->
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
